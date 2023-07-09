@@ -1,24 +1,19 @@
 ﻿// Напишите программу, которая с помощью деления выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
-int Add(string message)
-{
-    System.Console.WriteLine(message);
-    int numberA = Convert.ToInt32(Console.ReadLine());
-    return numberA;
-
-}
-
-int num = Add(" Введите число  ");
-
- while (num > 999)
+Console.WriteLine("Введите трехначное число");
+int numberA = Convert.ToInt32(Console.ReadLine());
+int third = 1;
+    if (numberA > 999)
     {
-        num = num / 10;
-        return num % 10;
+    numberA /= 10;
     }
-
-if (num < 100)
+    if (numberA < 100)
+    {
+        Console.WriteLine("Маленькое число");
+    }
+    else
 {
-    Console.WriteLine("Число {0} не трехзначное " ,num);
+third = numberA % 10;
 }
 
-Console.WriteLine( num );
+Console.WriteLine("Цифра {0}" , third);
