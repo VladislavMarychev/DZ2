@@ -16,7 +16,7 @@ int num = Add(" Введите число  ");
         return num % 10;
     }
 
-if ((num / 100) == 0)
+if (num < 100)
 {
     Console.WriteLine("Число {0} не трехзначное " ,num);
 }
