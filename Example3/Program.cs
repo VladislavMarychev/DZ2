@@ -1,9 +1,4 @@
-﻿namespace ConsoleApp3 
-{ 
-    internal class Program 
-    { 
-        static void Main(string[] args) 
-        { 
+﻿
             Console.Write(" Нужно узнать, является ли этот день выходным или нет?  "); 
             while (true) 
             { 
@@ -20,6 +15,3 @@
                 } 
                 else Console.Write(" Не существует такого дня недели"); 
             } 
-        } 
-    } 
-}
